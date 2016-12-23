@@ -1,0 +1,377 @@
+/* Boxshadows */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.2; }
+
+ol, ul, li {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix {
+  clear: both; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1.875rem; }
+
+h2 {
+  font-size: 1.875rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h3 {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem; }
+
+h4 {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem; }
+
+p {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 1rem; }
+
+li {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase; }
+
+.wrapper {
+  width: 95%;
+  margin: auto;
+  max-width: 1200px; }
+
+a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase; }
+
+img {
+  vertical-align: bottom; }
+
+.big_l {
+  width: 50vw;
+  height: 50vw;
+  float: left; }
+
+.big_r {
+  width: 50vw;
+  height: 50vw;
+  float: right; }
+
+.small_r {
+  float: left;
+  width: 50vw;
+  height: 25vw; }
+
+.small_r2 {
+  float: right;
+  width: 50vw;
+  height: 25vw; }
+
+.xsmall_l {
+  width: 25vw;
+  height: 25vw;
+  float: left; }
+
+.xsmall_r {
+  width: 25vw;
+  height: 25vw;
+  float: right; }
+
+.xsmall_l2 {
+  width: 25vw;
+  height: 25vw;
+  float: left; }
+
+.xsmall_r2 {
+  width: 25vw;
+  height: 25vw;
+  float: right; }
+
+@media screen and (max-width: 768px) {
+  .big_l {
+    width: 100vw;
+    height: 100vw;
+    max-width: 100%;
+    float: none; }
+
+  .big_r {
+    width: 100vw;
+    height: 100vw;
+    float: none;
+    max-width: 100%; }
+
+  .small_r {
+    float: none;
+    width: 100vw;
+    height: 50vw;
+    max-width: 100%; }
+
+  .small_r2 {
+    float: none;
+    width: 100vw;
+    height: 50vw;
+    max-width: 100%; }
+
+  .xsmall_l {
+    width: 50vw;
+    height: 50vw;
+    max-width: 50%; }
+
+  .xsmall_r {
+    width: 50vw;
+    height: 50vw;
+    max-width: 50%; }
+
+  .xsmall_l2 {
+    width: 50vw;
+    height: 50vw;
+    max-width: 50%; }
+
+  .xsmall_r2 {
+    width: 50vw;
+    height: 50vw;
+    max-width: 50%; } }
+.btn1, .btn2, .btn3, .btn4, .btn5 {
+  width: 150px;
+  height: 50px;
+  background-color: #88A825;
+  line-height: 50px; }
+
+.btn1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .btn1:hover {
+    background-color: #ED8C2B;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.btn2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .btn2:hover {
+    background-color: #ED8C2B;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.btn3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .btn3:hover {
+    background-color: #ED8C2B;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.btn4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .btn4:hover {
+    background-color: #ED8C2B;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
+
+.btn5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .btn5:hover {
+    background-color: #ED8C2B;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.topbar {
+  width: 100%;
+  height: 60px;
+  background-color: #373737;
+  line-height: 60px; }
+
+.topbar_content {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center; }
+  .topbar_content .logo {
+    width: 150px;
+    height: 60px;
+    margin: auto;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px; }
+    .topbar_content .logo img {
+      width: 120px; }
+
+nav ul {
+  float: left; }
+  nav ul li {
+    float: left;
+    color: white;
+    margin-right: 25px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+
+.links ul {
+  float: right; }
+  .links ul li {
+    float: left;
+    color: white;
+    margin-right: 25px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+
+@media screen and (max-width: 960px) {
+  nav {
+    display: none; }
+
+  .links {
+    display: none; } }
+header {
+  background: url(../bilder/header3_big.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  margin: auto; }
+  header h1 {
+    padding-top: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px; }
+  header h2 {
+    text-align: center;
+    padding-top: 14rem;
+    color: white; }
+
+.one_content .big_l {
+  background: white;
+  text-align: center; }
+  .one_content .big_l .content {
+    padding-top: 10%; }
+    .one_content .big_l .content img {
+      width: 100px;
+      padding-bottom: 2rem; }
+.one_content .big_r {
+  background: yellow; }
+.one_content .small_r {
+  background: blue; }
+.one_content .small_r2 {
+  background: black; }
+.one_content .xsmall_l {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem1.jpg);
+  background-size: cover; }
+.one_content .xsmall_r {
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem6.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem6.jpg);
+  background-size: cover; }
+.one_content .xsmall_l2 {
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem5.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem5.jpg);
+  background-size: cover; }
+.one_content .xsmall_r2 {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem4.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem4.jpg);
+  background-size: cover; }
+
+.two_content .big_l {
+  background: url(../bilder/lorem7.jpg);
+  background-size: cover; }
+.two_content .big_r {
+  text-align: center;
+  padding-top: 10%; }
+
+.three_content .big_l {
+  background: #f1f1f1;
+  text-align: center;
+  color: black;
+  padding-top: 10%; }
+  .three_content .big_l span {
+    position: relative;
+    font-size: 10rem; }
+.three_content .big_r {
+  background: url(../bilder/lorem3.jpg);
+  background-size: cover; }
+
+footer {
+  width: 100%;
+  height: 450px;
+  background: #262626;
+  color: white; }
+  footer .footer_content {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px; }
+    footer .footer_content h3 {
+      width: 120px;
+      margin-left: 13px;
+      text-align: center;
+      padding-bottom: 15px;
+      text-transform: uppercase; }
+    footer .footer_content ul {
+      width: 200px;
+      border-right: 1px solid rgba(255, 255, 255, 0.1); }
+    footer .footer_content li {
+      text-align: center;
+      width: 120px;
+      margin-left: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      footer .footer_content li:first-of-type {
+        padding-top: 25px;
+        border-top: 1px solid white; }
+
+/*# sourceMappingURL=style.css.map */
