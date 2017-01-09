@@ -2,11 +2,12 @@
     .big_l
         background: white
         text-align: center
-        .content
-            padding-top: 10%
-            img
-                width: 100px
-                padding-bottom: 2rem
+
+        img
+            width: 100px
+            padding-bottom: 2rem
+            @media screen and (max-width: 400px)
+                width: 15%
 
     .big_r
         background: yellow
@@ -26,24 +27,3 @@
     .xsmall_r2
         background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem4.jpg)
         background-size: cover
-
-//@media screen and (max-width: $small)
-    .one_content
-        .big_l
-            float: none
-            width: 100vw
-            height: 100vw
-            display: block
-        .big_r
-            float: none
-            display: block
-        .small_r
-            display: block
-            width: 100vw
-            height: 50vw
-            float: none
-        .small_r2
-            display: block
-            width: 100vw
-            height: 50vw
-            float: none

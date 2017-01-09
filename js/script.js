@@ -13,8 +13,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 $('.burger').on("click", function (event) {
-    $('.line').toggleClass('rota');
-    $('.line').toggleClass('rota_reset');
+    $('.burger img').toggleClass('rota');
+    $('.burger img').toggleClass('rota_reset');
 });
     });
 
@@ -46,4 +46,3 @@ $(document).ready(function(){
         $("#two .termine2").slideToggle(500);
     });
 });
-
