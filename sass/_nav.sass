@@ -33,15 +33,24 @@ nav
         li
             float: left
             color: white
-            margin-right: 25px
+            //padding: 0 12px
             font-family: $paragraph
             text-transform: uppercase
-            text-align: center
+            //text-align: center
+            //border-right: 1px solid white
+            &:hover
+                box-shadow: inset 0px -5px 0 $schmuckfarbe
+
+
 
             a
-                padding-bottom: 16px
-                &:hover
-                    border-bottom: 5px solid $schmuckfarbe
+
+                padding: 0 12px
+                color: white
+
+
+
+
 
 
 
@@ -51,10 +60,11 @@ nav
         li
             float: left
             color: white
-            margin-right: 25px
+            padding: 0 18px
             font-family: $paragraph
             text-transform: uppercase
             text-align: center
+            font-size: 1.5rem
 
 @media screen and (max-width: $medium)
     nav
@@ -63,31 +73,76 @@ nav
         display: none
     .nav_mobile
         display: block
-        width: 100%
-        height: 100px
-        //background: red
-        text-align: right
-        .burger
-            margin-right: 5%
-            h3
-                padding: 0
-                margin: 0
-                height: 10px
-                position: absolute
-                top: 20px
-                right: 10px
-                text-transform: uppercase
-                font-size: 1rem
-                margin-right: 4%
-            img
-                width: 2rem
-                vertical-align: top
-                transition: all ease 1s
-                //float: right
-                //margin-right: -40px
-                padding-top: 5px
-                z-index: 999
-            img.rota.rota_reset
-                transform: rotate(90deg)
         ul
-            display: none
+            //height: 500px
+            background: #262626
+            display: block
+            position: fixed
+            width: 50%
+            right: 1%
+            bottom: 1%
+            visibility: hidden
+            overflow: hidden
+            z-index: 1
+            text-align: left
+            padding-left: 30px
+            padding-right: 150px
+
+            color: white
+
+            transform: scale(0)
+            transform-origin: 100% 100%
+            //transition: transform 0.3s, visibilty 0s 0.3s
+            transition: all 300ms cubic-bezier(0.600, 0.040, 0.980, 0.335)
+            li
+                border-bottom: 1px solid white
+                &:last-child
+                    border: none
+                a
+                    display: block
+                    color: white
+                    //border-bottom: 1px solid white
+        ul.visible
+            visibility: visible
+            transform: scale(1)
+            transition: all 300ms cubic-bezier(0.600, 0.040, 0.980, 0.335)
+            //transition: transform 0.3s, visibility 0s 0s
+        .burger
+            z-index: 2
+            position: fixed
+            bottom: 15px
+            right: 15px
+            cursor: pointer
+            .circle
+                width: 50px
+                height: 50px
+                background: #262626
+                border-radius: 100px
+                box-shadow: $boxsh1
+                //position: relative
+
+
+
+                span
+
+                    position: relative
+                    top: 17px
+                    margin: auto
+                    height: 3px
+                    width: 20px
+                    margin-top: 0.2rem
+                    background: $schmuckfarbe
+                    display: block
+                    transition: all cubic-bezier(0.600, 0.040, 0.980, 0.335) 350ms
+
+                span.rota:nth-of-type(2)
+                    //background: red
+                    opacity: 0
+
+                span.rota:nth-of-type(1)
+                    transform: translate(0,6px) rotate(45deg)
+                    background: white
+
+                span.rota:nth-of-type(3)
+                    transform: translate(0,-6px) rotate(-45deg)
+                    background: white

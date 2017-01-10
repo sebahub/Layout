@@ -64,7 +64,10 @@ h2 {
 h3 {
   font-size: 1.4rem;
   font-family: "Raleway", sans-serif;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
 
 h4 {
   font-size: 1rem;
@@ -88,7 +91,8 @@ li {
 
 a {
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: white; }
 
 img {
   vertical-align: bottom; }
@@ -163,10 +167,11 @@ img {
 
 .line {
   height: 2px;
-  width: 10%;
+  width: 5%;
   background: #ED8C2B;
   margin: auto;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
 
 @media screen and (max-width: 768px) {
   .big_l {
@@ -299,24 +304,24 @@ nav ul {
   nav ul li {
     float: left;
     color: white;
-    margin-right: 25px;
     font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    text-align: center; }
+    text-transform: uppercase; }
+    nav ul li:hover {
+      box-shadow: inset 0px -5px 0 #ED8C2B; }
     nav ul li a {
-      padding-bottom: 16px; }
-      nav ul li a:hover {
-        border-bottom: 5px solid #ED8C2B; }
+      padding: 0 12px;
+      color: white; }
 
 .links ul {
   float: right; }
   .links ul li {
     float: left;
     color: white;
-    margin-right: 25px;
+    padding: 0 18px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5rem; }
 
 @media screen and (max-width: 960px) {
   nav {
@@ -326,35 +331,78 @@ nav ul {
     display: none; }
 
   .nav_mobile {
-    display: block;
-    width: 100%;
-    height: 100px;
-    text-align: right; }
-    .nav_mobile .burger {
-      margin-right: 5%; }
-      .nav_mobile .burger h3 {
-        padding: 0;
-        margin: 0;
-        height: 10px;
-        position: absolute;
-        top: 20px;
-        right: 10px;
-        text-transform: uppercase;
-        font-size: 1rem;
-        margin-right: 4%; }
-      .nav_mobile .burger img {
-        width: 2rem;
-        vertical-align: top;
-        -webkit-transition: all ease 1s;
-                transition: all ease 1s;
-        padding-top: 5px;
-        z-index: 999; }
-      .nav_mobile .burger img.rota.rota_reset {
-        -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-                transform: rotate(90deg); }
+    display: block; }
     .nav_mobile ul {
-      display: none; } }
+      background: #262626;
+      display: block;
+      position: fixed;
+      width: 50%;
+      right: 1%;
+      bottom: 1%;
+      visibility: hidden;
+      overflow: hidden;
+      z-index: 1;
+      text-align: left;
+      padding-left: 30px;
+      padding-right: 150px;
+      color: white;
+      -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+              transform: scale(0);
+      -webkit-transform-origin: 100% 100%;
+          -ms-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      -webkit-transition: all 300ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+              transition: all 300ms cubic-bezier(0.6, 0.04, 0.98, 0.335); }
+      .nav_mobile ul li {
+        border-bottom: 1px solid white; }
+        .nav_mobile ul li:last-child {
+          border: none; }
+        .nav_mobile ul li a {
+          display: block;
+          color: white; }
+    .nav_mobile ul.visible {
+      visibility: visible;
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1);
+      -webkit-transition: all 300ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+              transition: all 300ms cubic-bezier(0.6, 0.04, 0.98, 0.335); }
+    .nav_mobile .burger {
+      z-index: 2;
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      cursor: pointer; }
+      .nav_mobile .burger .circle {
+        width: 50px;
+        height: 50px;
+        background: #262626;
+        border-radius: 100px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+        .nav_mobile .burger .circle span {
+          position: relative;
+          top: 17px;
+          margin: auto;
+          height: 3px;
+          width: 20px;
+          margin-top: 0.2rem;
+          background: #ED8C2B;
+          display: block;
+          -webkit-transition: all cubic-bezier(0.6, 0.04, 0.98, 0.335) 350ms;
+                  transition: all cubic-bezier(0.6, 0.04, 0.98, 0.335) 350ms; }
+        .nav_mobile .burger .circle span.rota:nth-of-type(2) {
+          opacity: 0; }
+        .nav_mobile .burger .circle span.rota:nth-of-type(1) {
+          -webkit-transform: translate(0, 6px) rotate(45deg);
+              -ms-transform: translate(0, 6px) rotate(45deg);
+                  transform: translate(0, 6px) rotate(45deg);
+          background: white; }
+        .nav_mobile .burger .circle span.rota:nth-of-type(3) {
+          -webkit-transform: translate(0, -6px) rotate(-45deg);
+              -ms-transform: translate(0, -6px) rotate(-45deg);
+                  transform: translate(0, -6px) rotate(-45deg);
+          background: white; } }
 header {
   background: url(../bilder/header3_big.jpg);
   background-size: cover;
@@ -370,8 +418,20 @@ header {
     letter-spacing: 5px; }
   header h2 {
     text-align: center;
-    padding-top: 14rem;
+    padding-top: 8rem;
     color: white; }
+  header .btn1 {
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    -webkit-transition: all ease 2s;
+            transition: all ease 2s; }
+    header .btn1:hover {
+      color: black; }
 
 .one_content .big_l {
   background: white;
@@ -417,7 +477,8 @@ header {
     width: 50px; }
     .three_content .big_l span i {
       font-size: 3rem;
-      padding-bottom: 0.5rem; }
+      padding-bottom: 0.5rem;
+      color: white; }
 .three_content .big_r {
   background: url(../bilder/lorem3.jpg);
   background-size: cover; }
@@ -433,6 +494,9 @@ header {
     text-align: center; }
     .four_content .big_3rd_l p, .four_content .big_3rd_m p, .four_content .big_3rd_r p {
       padding-bottom: 2.5rem; }
+
+#five h2 {
+  text-align: center; }
 
 footer {
   width: 100%;
@@ -463,4 +527,15 @@ footer {
       footer .footer_content li:first-of-type {
         padding-top: 25px;
         border-top: 1px solid white; }
+  footer .social {
+    width: 70%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    font-size: 3rem; }
+
 /*# sourceMappingURL=style.css.map */
