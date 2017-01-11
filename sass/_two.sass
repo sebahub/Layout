@@ -1,5 +1,47 @@
 .two_content
     .big_l
         background: url(../bilder/lorem7.jpg)
-        background-size: cover
+        background-size: contain
+        cursor: pointer
+        &:hover .caption
+            height: 100%
+            opacity: 1
+.caption
+    width: 100%
+    height: 100%
+    opacity: 0
+    background: rgba(255, 255, 255, 0.7)
+    transition: all ease-in 0.2s
+    .line
+        display: none
+    h2
+        width: 100%
+        text-align: center
+        padding-top: 10%
+        text-transform: none
+        font-family: 'Mrs Sheppards', cursive
+        font-size: 4rem
+    // .caption_btm
+    //     width: 100%
+    //     height: 25%
+    //     background: $schmuckfarbe
+    //     position: relative
+    //     top: 60%
+
+
+    // p
+    //     color: black
+    //     text-align: center
+    //     background: white
+    //     width: 100%
+    //     line-height: 100px
+    //     height: 0
+    //     position: relative
+    //     top: 0
+    //     opacity: 0
+    //     transition: all 2s ease
+    // &:hover p
+    //     top: 0
+    //     opacity: 1
+    //     height: 100px
     .big_r
