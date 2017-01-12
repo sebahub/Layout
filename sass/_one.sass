@@ -10,20 +10,74 @@
                 width: 15%
 
     .big_r
-        background: yellow
+
+        //transform: scale(1.2)
     .small_r
-        background: blue
+
     .small_r2
-        background: black
+
     .xsmall_l
         background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem1.jpg)
-        background-size: cover
+        background-size: 100%
+        cursor: pointer
+        transition: all 0.2s ease
+        &:hover
+            background-size: 110%
+        &:hover .caption, &:focus .caption
+            height: 100%
+            opacity: 1
+    .xsmall_l.resize
+        transform: scale(2) translate(25%, 25%)
+        &:hover
+            background-size: 100%
+        &:hover .caption
+            opacity: 0
+    .xsmall_r.resize
+        transform: scale(2) translate(25%, -25%)
+        &:hover
+            background-size: 100%
+        &:hover .caption
+            opacity: 0
+    .xsmall_l2.resize
+        transform: scale(2) translate(-25%, 25%)
+        &:hover
+            background-size: 100%
+        &:hover .caption
+            opacity: 0
+    .xsmall_r2.resize
+        transform: scale(2) translate(-25%, -25%)
+        &:hover
+            background-size: 100%
+        &:hover .caption
+            opacity: 0
+
     .xsmall_r
         background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem6.jpg)
-        background-size: cover
+        background-size: 100%
+        cursor: pointer
+        transition: all 0.2s ease
+        &:hover
+            background-size: 110%
+        &:hover .caption, &:focus .caption
+            height: 100%
+            opacity: 1
     .xsmall_l2
         background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem5.jpg)
-        background-size: cover
+        background-size: 100%
+        cursor: pointer
+        transition: all 0.2s ease
+        &:hover
+            background-size: 110%
+        &:hover .caption, &:focus .caption
+            height: 100%
+            opacity: 1
     .xsmall_r2
         background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem4.jpg)
-        background-size: cover
+        background-size: 100%
+        cursor: pointer
+        transition: all 0.2s ease
+        &:hover
+            background-size: 110%
+        &:hover .caption, &:focus .caption
+            height: 100%
+            opacity: 1

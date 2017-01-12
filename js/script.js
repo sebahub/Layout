@@ -9,6 +9,26 @@ $(document).ready(function(){
     $('span').toggleClass('rota_reset');
 });
 
+    $('.xsmall_l').click(function () {
+    $('.xsmall_l').toggleClass('resize');
+});
+    $('.xsmall_r').click(function () {
+    $('.xsmall_r').toggleClass('resize');
+});
+    $('.xsmall_l2').click(function () {
+    $('.xsmall_l2').toggleClass('resize');
+});
+    $('.xsmall_r2').click(function () {
+    $('.xsmall_r2').toggleClass('resize');
+});
+    $('.two_content .big_l').click(function () {
+    $('.two_content .big_l').toggleClass('resize');
+});
+
+
+
+
+
 
 
     });

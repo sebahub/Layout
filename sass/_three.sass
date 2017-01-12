@@ -16,8 +16,13 @@
 
     .big_r
         background: url(../bilder/lorem3.jpg)
-        background-size: cover
+        background-size: 100%
+        background-position: center
         cursor: pointer
+        transition: all 0.2s ease
+        //transform: scale(1.2)
+        &:hover
+            background-size: 110%
         &:hover .caption
             height: 100%
             opacity: 1
