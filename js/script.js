@@ -25,6 +25,31 @@ $(document).ready(function(){
     $('.two_content .big_l').toggleClass('resize');
 });
 
+    $('.xsmall_l').click(function () {
+    $('.xsmall_r').toggleClass('unsize');
+    $('.xsmall_r2').toggleClass('unsize');
+    $('.xsmall_l2').toggleClass('unsize');
+});
+
+    $('.xsmall_r').click(function () {
+    $('.xsmall_l').toggleClass('unsize');
+    $('.xsmall_r2').toggleClass('unsize');
+    $('.xsmall_l2').toggleClass('unsize');
+});
+
+    $('.xsmall_l2').click(function () {
+    $('.xsmall_r').toggleClass('unsize');
+    $('.xsmall_r2').toggleClass('unsize');
+    $('.xsmall_l').toggleClass('unsize');
+});
+
+    $('.xsmall_r2').click(function () {
+    $('.xsmall_l').toggleClass('unsize');
+    $('.xsmall_r2').toggleClass('unsize');
+    $('.xsmall_l2').toggleClass('unsize');
+});
+
+
 
 
 

@@ -17,65 +17,100 @@
     .small_r2
 
     .xsmall_l
+        position: relative
         background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem1.jpg)
         background-size: 100%
         cursor: pointer
-        transition: all 0.2s ease
+        //transition: all 0.2s ease
         &:hover
             background-size: 110%
         &:hover .caption, &:focus .caption
             height: 100%
             opacity: 1
+    .xsmall_l.unsize
+
     .xsmall_l.resize
         transform: scale(2) translate(25%, 25%)
+        z-index: 1
+        background-size: cover
         &:hover
-            background-size: 100%
+            //background-size: 100%
         &:hover .caption
             opacity: 0
     .xsmall_r.resize
-        transform: scale(2) translate(25%, -25%)
-        &:hover
-            background-size: 100%
-        &:hover .caption
-            opacity: 0
-    .xsmall_l2.resize
         transform: scale(2) translate(-25%, 25%)
+        z-index: 1
         &:hover
             background-size: 100%
         &:hover .caption
             opacity: 0
-    .xsmall_r2.resize
-        transform: scale(2) translate(-25%, -25%)
+    .xsmall_r.unsize
         &:hover
             background-size: 100%
         &:hover .caption
             opacity: 0
 
+    .xsmall_l2.resize
+        transform: scale(2) translate(25%, -25%)
+        z-index: 1
+        &:hover
+            background-size: 100%
+        &:hover .caption
+            opacity: 0
+    .xsmall_l2.unsize
+        &:hover
+            background-size: 100%
+        &:hover .caption
+            opacity: 0
+
+
+
+    .xsmall_r2.resize
+        transform: scale(2) translate(-25%, -25%)
+        z-index: 1
+        &:hover
+            background-size: 100%
+        &:hover .caption
+            opacity: 0
+    .xsmall_r2.unsize
+        &:hover
+            background-size: 100%
+        &:hover .caption
+            opacity: 0
+
+
+
     .xsmall_r
+        position: relative
         background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem6.jpg)
         background-size: 100%
         cursor: pointer
-        transition: all 0.2s ease
+        //transition: all 0.2s ease
         &:hover
             background-size: 110%
         &:hover .caption, &:focus .caption
             height: 100%
             opacity: 1
+
+
+
     .xsmall_l2
+        position: relative
         background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem5.jpg)
         background-size: 100%
         cursor: pointer
-        transition: all 0.2s ease
+        //transition: all 0.2s ease
         &:hover
             background-size: 110%
         &:hover .caption, &:focus .caption
             height: 100%
             opacity: 1
     .xsmall_r2
+        position: relative
         background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem4.jpg)
         background-size: 100%
         cursor: pointer
-        transition: all 0.2s ease
+        //transition: all 0.2s ease
         &:hover
             background-size: 110%
         &:hover .caption, &:focus .caption

@@ -85,14 +85,15 @@ li {
   text-transform: uppercase; }
 
 .wrapper {
-  width: 95%;
+  width: 100%;
   margin: auto;
   max-width: 1200px; }
 
 a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  display: block; }
 
 img {
   vertical-align: bottom; }
@@ -101,49 +102,65 @@ img {
   width: 50vw;
   height: 50vw;
   float: left;
-  max-width: 50%; }
+  max-width: 50%;
+  max-width: 600px;
+  max-height: 600px; }
 
 .big_r {
   width: 50vw;
   height: 50vw;
   float: right;
-  max-width: 50%; }
+  max-width: 50%;
+  max-width: 600px;
+  max-height: 600px; }
 
 .small_r {
   float: left;
   width: 50vw;
   height: 25vw;
-  max-width: 50%; }
+  max-width: 50%;
+  max-width: 600px;
+  max-height: 300px; }
 
 .small_r2 {
   float: right;
   width: 50vw;
   height: 25vw;
-  max-width: 50%; }
+  max-width: 50%;
+  max-width: 600px;
+  max-height: 300px; }
 
 .xsmall_l {
   width: 25vw;
   height: 25vw;
   float: left;
-  max-width: 100%; }
+  max-width: 100%;
+  max-width: 300px;
+  max-height: 300px; }
 
 .xsmall_r {
   width: 25vw;
   height: 25vw;
   float: right;
-  max-width: 100%; }
+  max-width: 100%;
+  max-width: 300px;
+  max-height: 300px; }
 
 .xsmall_l2 {
   width: 25vw;
   height: 25vw;
   float: left;
-  max-width: 100%; }
+  max-width: 100%;
+  max-width: 300px;
+  max-height: 300px; }
 
 .xsmall_r2 {
   width: 25vw;
   height: 25vw;
   float: right;
-  max-width: 100%; }
+  max-width: 100%;
+  max-width: 300px;
+  max-height: 300px; }
 
 .big_3rd_l {
   width: 33.33333%;
@@ -178,45 +195,53 @@ img {
     width: 100vw;
     height: 100vw;
     max-width: 100%;
+    max-height: none;
     float: none; }
 
   .big_r {
     width: 100vw;
     height: 100vw;
     float: none;
-    max-width: 100%; }
+    max-width: 100%;
+    max-height: none; }
 
   .small_r {
     float: none;
     width: 100vw;
     height: 50vw;
-    max-width: 100%; }
+    max-width: 100%;
+    max-height: none; }
 
   .small_r2 {
     float: none;
     width: 100vw;
     height: 50vw;
-    max-width: 100%; }
+    max-width: 100%;
+    max-height: none; }
 
   .xsmall_l {
     width: 50vw;
     height: 50vw;
-    max-width: 50%; }
+    max-width: 50%;
+    max-height: none; }
 
   .xsmall_r {
     width: 50vw;
     height: 50vw;
-    max-width: 50%; }
+    max-width: 50%;
+    max-height: none; }
 
   .xsmall_l2 {
     width: 50vw;
     height: 50vw;
-    max-width: 50%; }
+    max-width: 50%;
+    max-height: none; }
 
   .xsmall_r2 {
     width: 50vw;
     height: 50vw;
-    max-width: 50%; }
+    max-width: 50%;
+    max-height: none; }
 
   .big_3rd_l {
     width: 100%; }
@@ -448,12 +473,11 @@ header {
       .one_content .big_l img {
         width: 15%; } }
 .one_content .xsmall_l {
+  position: relative;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem1.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem1.jpg);
   background-size: 100%;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  cursor: pointer; }
   .one_content .xsmall_l:hover {
     background-size: 110%; }
   .one_content .xsmall_l:hover .caption, .one_content .xsmall_l:focus .caption {
@@ -462,66 +486,78 @@ header {
 .one_content .xsmall_l.resize {
   -webkit-transform: scale(2) translate(25%, 25%);
       -ms-transform: scale(2) translate(25%, 25%);
-          transform: scale(2) translate(25%, 25%); }
-  .one_content .xsmall_l.resize:hover {
-    background-size: 100%; }
+          transform: scale(2) translate(25%, 25%);
+  z-index: 1;
+  background-size: cover; }
   .one_content .xsmall_l.resize:hover .caption {
     opacity: 0; }
 .one_content .xsmall_r.resize {
-  -webkit-transform: scale(2) translate(25%, -25%);
-      -ms-transform: scale(2) translate(25%, -25%);
-          transform: scale(2) translate(25%, -25%); }
+  -webkit-transform: scale(2) translate(-25%, 25%);
+      -ms-transform: scale(2) translate(-25%, 25%);
+          transform: scale(2) translate(-25%, 25%);
+  z-index: 1; }
   .one_content .xsmall_r.resize:hover {
     background-size: 100%; }
   .one_content .xsmall_r.resize:hover .caption {
     opacity: 0; }
+.one_content .xsmall_r.unsize:hover {
+  background-size: 100%; }
+.one_content .xsmall_r.unsize:hover .caption {
+  opacity: 0; }
 .one_content .xsmall_l2.resize {
-  -webkit-transform: scale(2) translate(-25%, 25%);
-      -ms-transform: scale(2) translate(-25%, 25%);
-          transform: scale(2) translate(-25%, 25%); }
+  -webkit-transform: scale(2) translate(25%, -25%);
+      -ms-transform: scale(2) translate(25%, -25%);
+          transform: scale(2) translate(25%, -25%);
+  z-index: 1; }
   .one_content .xsmall_l2.resize:hover {
     background-size: 100%; }
   .one_content .xsmall_l2.resize:hover .caption {
     opacity: 0; }
+.one_content .xsmall_l2.unsize:hover {
+  background-size: 100%; }
+.one_content .xsmall_l2.unsize:hover .caption {
+  opacity: 0; }
 .one_content .xsmall_r2.resize {
   -webkit-transform: scale(2) translate(-25%, -25%);
       -ms-transform: scale(2) translate(-25%, -25%);
-          transform: scale(2) translate(-25%, -25%); }
+          transform: scale(2) translate(-25%, -25%);
+  z-index: 1; }
   .one_content .xsmall_r2.resize:hover {
     background-size: 100%; }
   .one_content .xsmall_r2.resize:hover .caption {
     opacity: 0; }
+.one_content .xsmall_r2.unsize:hover {
+  background-size: 100%; }
+.one_content .xsmall_r2.unsize:hover .caption {
+  opacity: 0; }
 .one_content .xsmall_r {
+  position: relative;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem6.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem6.jpg);
   background-size: 100%;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  cursor: pointer; }
   .one_content .xsmall_r:hover {
     background-size: 110%; }
   .one_content .xsmall_r:hover .caption, .one_content .xsmall_r:focus .caption {
     height: 100%;
     opacity: 1; }
 .one_content .xsmall_l2 {
+  position: relative;
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem5.jpg);
   background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(225, 225, 225, 0.1)), url(../bilder/lorem5.jpg);
   background-size: 100%;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  cursor: pointer; }
   .one_content .xsmall_l2:hover {
     background-size: 110%; }
   .one_content .xsmall_l2:hover .caption, .one_content .xsmall_l2:focus .caption {
     height: 100%;
     opacity: 1; }
 .one_content .xsmall_r2 {
+  position: relative;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem4.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../bilder/lorem4.jpg);
   background-size: 100%;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  cursor: pointer; }
   .one_content .xsmall_r2:hover {
     background-size: 110%; }
   .one_content .xsmall_r2:hover .caption, .one_content .xsmall_r2:focus .caption {
@@ -529,13 +565,12 @@ header {
     opacity: 1; }
 
 .two_content .big_l {
+  position: relative;
   background: url(../bilder/lorem7.jpg);
   background-size: 100%;
   background-position: center;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
-  z-index: 2; }
+  z-index: 1; }
   .two_content .big_l:hover {
     background-size: 110%; }
   .two_content .big_l:hover .caption, .two_content .big_l:focus .caption {
@@ -583,9 +618,7 @@ header {
   background: url(../bilder/lorem3.jpg);
   background-size: 100%;
   background-position: center;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  cursor: pointer; }
   .three_content .big_r:hover {
     background-size: 110%; }
   .three_content .big_r:hover .caption {
