@@ -103,7 +103,6 @@ img {
   height: 50vw;
   float: left;
   max-width: 50%;
-  max-width: 600px;
   max-height: 600px; }
 
 .big_r {
@@ -111,7 +110,6 @@ img {
   height: 50vw;
   float: right;
   max-width: 50%;
-  max-width: 600px;
   max-height: 600px; }
 
 .small_r {
@@ -119,7 +117,6 @@ img {
   width: 50vw;
   height: 25vw;
   max-width: 50%;
-  max-width: 600px;
   max-height: 300px; }
 
 .small_r2 {
@@ -127,7 +124,6 @@ img {
   width: 50vw;
   height: 25vw;
   max-width: 50%;
-  max-width: 600px;
   max-height: 300px; }
 
 .xsmall_l {
@@ -135,7 +131,6 @@ img {
   height: 25vw;
   float: left;
   max-width: 100%;
-  max-width: 300px;
   max-height: 300px; }
 
 .xsmall_r {
@@ -143,7 +138,6 @@ img {
   height: 25vw;
   float: right;
   max-width: 100%;
-  max-width: 300px;
   max-height: 300px; }
 
 .xsmall_l2 {
@@ -151,7 +145,6 @@ img {
   height: 25vw;
   float: left;
   max-width: 100%;
-  max-width: 300px;
   max-height: 300px; }
 
 .xsmall_r2 {
@@ -159,7 +152,6 @@ img {
   height: 25vw;
   float: right;
   max-width: 100%;
-  max-width: 300px;
   max-height: 300px; }
 
 .big_3rd_l {
